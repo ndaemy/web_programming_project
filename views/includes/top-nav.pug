@@ -1,0 +1,27 @@
+block top-nav
+  nav.ebcp-navbar.navbar.navbar-expand-lg.navbar-light
+    a.ebcp-logo.navbar-brand(href='/') 
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar-content', aria-controls='navbar-content', aria-expanded='false', aira-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbar-content.navbar-content.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.navbar-item
+          a.nav-link(href='#') Browse Events
+        li.navbar-item.dropdown
+          a#organize-dropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Organize
+          .dropdown-menu(aria-labelledby='organize-dropdown')
+            a.dropdown-item(href='#') Overview
+            a.dropdown-item(href='#') Pricing
+            a.dropdown-item(href='#') Blog
+            a.dropdown-item(href='#') Resources
+        li.navbar-item.dropdown
+          a#help-dropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Help
+          .dropdown-menu(aria-labelledby='help-dropdown')
+            a.dropdown-item(href='#') Where are my tickets?
+            a.dropdown-item(href='#') How to contact the event organizer
+            .dropdown-divider
+            a.dropdown-item(href='#') Help Center
+        li.navbar-item
+          a.nav-link(href='#') Sign in
+        li.navbar-item
+          a.nav-link.ebcp-create(href='#') Create Event
