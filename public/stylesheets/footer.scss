@@ -1,0 +1,44 @@
+$basic-color: #666a73;
+$background: #282c35;
+$text-body-color: #d2d6df;
+
+.ebcp-footer {
+  background: $background;
+  border-top: $basic-color solid 6px;
+  color: $basic-color;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  position: relative;
+
+  .footer-content {
+    margin-top: 10px;
+  }
+}
+
+.site-navigation {
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.footer-text-heading-primary {
+  color: #adb0b6;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+
+  li {
+    line-height: 1.9;
+  }
+}
+
+.footer-text-body {
+  color: $text-body-color;
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: .9px;
+  line-height: 18px;
+
+  &:hover {
+    color: $text-body-color;
+  }
+}
