@@ -1,4 +1,32 @@
 extends layout
 
 block content
-  
+  .carousel.slide.forp-carousel(data-ride='carousel', data-interval='3000')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='images/home/homepage_hero_banner_1.jpg', alt='Computer bytes')
+      .carousel-item
+        img.d-block.w-100(src='images/home/homepage_hero_banner_2.jpg', alt='The periodic table of Programming languages')
+      .carousel-item
+        img.d-block.w-100(src='images/home/homepage_hero_banner_3.jpg', alt='Computer codes')
+      .carousel-item
+        img.d-block.w-100(src='images/home/homepage_hero_banner_4.jpg', alt='Computer codes')
+  .container
+    .row
+      .col-12
+        .container.ebcp-main-search
+          h1.text-heading Find your next experience
+          
+          form.ebcp-search-bar-container
+            input.search-bar-component(type='text', name='query', aria-label='Search events or categories', placeholder='Search events or categories')
+            input.search-bar-component(type='text', name='location', aria-label='loc', placeholder='Enter city or location', value='Republic of Korea')
+            select.search-bar-component(name='date')
+              option(value, selected='selected') All dates
+              option(value='today') Today
+              option(value='tomorrow') Tomorrow
+              option(value='this_week') This week
+              option(value='this_weekend') This weekend
+              option(value='next_week') Next week
+              option(value='next_month') Next month
+            span.search-bar-component
+              button.home-search-btn(type='button') Search

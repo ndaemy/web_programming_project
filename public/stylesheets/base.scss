@@ -1,3 +1,7 @@
+* {
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 a {
   background-color: transparent;
   color: #0278b8;
@@ -7,4 +11,36 @@ a {
 ol,
 ul {
   list-style: none;
+}
+
+input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: #fff;
+  border: 1px #d2d6df solid;
+  box-sizing: border-box;
+  color: #45494e;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  line-height: 24px;
+  padding: 9px 12px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+select {
+  -webkit-appearance: menulist-button;
+  background: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  z-index: 1;
+}
+
+button,
+input {
+  -webkit-appearance: button;
+  cursor: pointer;
 }
