@@ -21,7 +21,11 @@ block top-nav
             a.dropdown-item(href='#') How to contact the event organizer
             .dropdown-divider
             a.dropdown-item(href='#') Help Center
-        li.navbar-item
-          a.nav-link(href='#') Sign in
+        if (!currentUser)
+          li.navbar-item
+            a.nav-link(href='/signin') Sign in
+        else
+          li.navbar-item
+            a.nav-link(href='/signout') Sign out
         li.navbar-item
           a.nav-link.ebcp-create(href='#') Create Event

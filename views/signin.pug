@@ -1,0 +1,25 @@
+extends layout
+
+block top-nav
+  
+block content
+  .container
+    .signin-content
+      .signin-logo
+        img.square-72(src="favicon.ico", alt="Logo")
+      .signin-heading Let's get started
+      .signin-subheading Enter your email and password to log in.
+      |
+      form.signin-form(novalidate, action='/signin', method='POST')
+        .signin-input--heading Email address
+        .signin-box
+          input.signin-box--form#signin-email(type='email', data-spec='text-input', role='textbox', name='email', placeholder='Enter email', aria-invalid='false')
+        .signin-input--heading Password
+        .signin-box
+          input.signin-box--form#signin-password(type='password', data-spec='text-input', role='textbox', name='password', placeholder='Enter password', aria-invalid='false')
+        button.signin-button(type="submit") Get started
+      .make-account--section
+        a.make-account(href='users/new') I don't have account.
+
+
+block footer
