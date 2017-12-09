@@ -8,11 +8,12 @@ var sassMiddleware = require('node-sass-middleware');
 var session = require('express-session');
 var methodOverride = require('method-override');
 var flash = require('connect-flash');
-var mongoose   = require('mongoose');
+var mongoose = require('mongoose');
 var passport = require('passport');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var brites = require('./routes/brites');
 var passportConfig = require('./lib/passport-config');
 
 var app = express();
@@ -79,7 +80,9 @@ app.use(function(req, res, next) {
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/brites', brites);
 require('./routes/auth')(app, passport);
+app.use('/datepicker', express.static(__dirname + '/node_modules/@fengyuanchen/datepicker/dist'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -13,17 +13,17 @@ block content
       form.signin-form(novalidate, action='/users', method='POST')
         .signin-input--heading Email address
         .signin-box
-          input.signin-box--form(type='email', data-spec='text-input', role='textbox', name='email', placeholder='Enter email', aria-invalid='false')
+          input.signin-box--form(type='email', role='textbox', name='email', placeholder='Enter email', aria-invalid='false')
         .signin-input--heading Name
         .signin-box
-          input.signin-box--form(type='text', data-spec='text-input', role='textbox', name='name', placeholder='Enter your name', aria-invalid='false')
+          input.signin-box--form(type='text', role='textbox', name='name', placeholder='Enter your name', aria-invalid='false')
         .signin-input--heading Password
         .signin-box
-          input.signin-box--form(type='password', data-spec='text-input', role='textbox', name='password', placeholder='Enter password', aria-invalid='false')
+          input.signin-box--form(type='password', role='textbox', name='password', placeholder='Enter password', aria-invalid='false')
         .signin-input--heading Password confirmation
         .signin-box
-          input.signin-box--form(type='password', data-spec='text-input', role='textbox', name='password_confirmation', placeholder='Enter password again', aria-invalid='false')
-        button.signin-button(type="submit") Get started
+          input.signin-box--form(type='password', role='textbox', name='password_confirmation', placeholder='Enter password again', aria-invalid='false')
+        button.signin-button(type='submit') Get started
       .make-account--section
         a.make-account(href='users/new') I don't have account.
 

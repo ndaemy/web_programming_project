@@ -1,0 +1,98 @@
+.brite-top {
+  padding: 24px;
+}
+
+.main-title {
+  color: rgb(54, 58, 67);
+  font-size: 24px;
+  font-weight: 100;
+  padding-bottom: 14px;
+  padding-top: 16px;
+}
+
+.seperate-bar {
+  background-color: rgb(69, 73, 78);
+  color: #fff;
+  display: flex;
+  font-size: 12px;
+  height: 48px;
+  letter-spacing: 1px;
+  padding: 14px 36px 10px;
+  text-transform: uppercase;
+}
+
+.shadow-on {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+  margin: 3em 0;
+  width: 20em;
+}
+
+.event-details-header {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+  margin-top: 20px;
+}
+
+.sub-title {
+  border-bottom: 1px solid rgb(102, 106, 115);
+  color: rgb(102, 106, 115);
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+}
+
+.brite-form {
+  margin-bottom: 32px;
+  padding-top: 16px;
+  width: 690px;
+}
+
+.brite-input--heading {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.brite-box {
+  height: 40px;
+  margin-bottom: 20px;
+  width: 690px;
+}
+
+.brite-box--form {
+  border-radius: 2px;
+  height: 38px;
+  padding-left: 12px;
+
+  &::placeholder {
+    color: rgb(210, 210, 210);
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+  }
+}
+
+.submit {
+  margin-top: 36px;
+}
+
+.brite-button {
+  background-color: rgb(0, 171, 68);
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  height: 44px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.brite-card {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+  margin-bottom: 24px;
+  width: 20rem;
+}

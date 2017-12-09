@@ -1,0 +1,20 @@
+extends ../layout
+
+block content
+  .brite-top
+    h2.main-title Browse Events
+  
+  .container
+    .row
+      if brites.total <= 0
+        .alert.alert-info No Events available yet
+      else
+        .brites
+          each brite in brites.docs
+            .col-4
+              .card.brite-card
+                img.card-img-top(src='images/brite/event.png', alt='Card image cap')
+                .card-body
+                  h4.card-title= brite.title
+                  p.card-text= brite.location
+                  a.btn.btn-primary(href=`/brites/${brite.id}`) Details

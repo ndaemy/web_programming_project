@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  .brite-top
+    h2.main-title= brite.title
+  .seperate-bar Show
+  
+  .container
+    .row
+      .col-1
+      .col-10.shadow-on
+        .event-details-header
+        h2.sub-title Description
+        p= brite.description
+        | 
+        h2.sub-title Location
+        p= brite.location
+        | 
+        h2.sub-title Fee
+        p= brite.fee
+        | 
+        h2.sub-title Start Date
+        p= brite.startDate
+        | 
+        h2.sub-title End Date
+        p= brite.endDate
+        | 
+        h2.sub-title Organizer
+        p= brite.organizer
+        | 
+        h2.sub-title Organizer Description
+        p= brite.organizerDesc

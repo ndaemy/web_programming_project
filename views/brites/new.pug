@@ -1,0 +1,46 @@
+extends ../layout
+
+block content
+  .brite-top
+    h2.main-title Create An Event
+  .seperate-bar Edit
+  
+  .container
+    .row
+      .col-1
+      .col-10.shadow-on
+        .event-details-header
+        form.brite-form(novalidate, action='/brites', method='POST')
+          h2.sub-title 1. Event Details
+          .brite-input--heading Event Title
+          .brite-box
+            input.brite-box--form(type='text', role='textbox', name='title', placeholder='Give it a short distinct name', aria-invalid='false')
+          .brite-input--heading Location
+          .brite-box
+            input.brite-box--form(type='text', role='textbox', name='location', placeholder='Search for a venue or address.', aria-invalid='false')
+          .brite-input--heading Starts
+          .brite-box
+            input.brite-box--form(type='text', role='textbox', name='startDate', data-toggle='datepicker', aria-invalid='false')
+          .brite-input--heading Ends
+          .brite-box
+            input.brite-box--form(type='text', role='textbox', name='endDate', data-toggle='datepicker', aria-invalid='false')
+          .brite-input--heading Description
+          .brite-box
+            input.brite-box--form(type='text', role='textbox', name='description', placeholder='Give it long description.', aria-invalid='false')
+          .brite-input--heading Organizer
+          .brite-box
+            input.brite-box--form(type='text', role='textbox', name='organizer', placeholder='Who organize this event?', aria-invalid='false')
+          .brite-input--heading Organizer Description
+          .brite-box
+            input.brite-box--form(type='text', role='textbox', name='organizerDesc', placeholder='Who is this organizer?', aria-invalid='false')
+          |
+          h2.sub-title 2. Create Tickets
+          .brite-input--heading Charge a fee (in $)
+            input.brite-box--form(type='number', name='fee', placeholder='Enter a fee (if free, enter 0).', aria-invalid='false')
+        
+          .submit
+            button.brite-button(type='submit') Make your event live
+            
+            
+  script.
+    $('[data-toggle="datepicker"]').datepicker();
